@@ -1,0 +1,83 @@
+{
+  "name": "element-plus-admin",
+  "version": "0.0.1",
+  "description": "后台管理系统",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite",
+    "build:prod": "vite build",
+    "build:stage": "vite build --mode staging",
+    "preview": "vite preview",
+    "web-norm": "web-norm",
+    "prepare": "husky install",
+    "pre-commit": "lint-staged",
+    "postinstallmac": "git config core.hooksPath .husky && chmod 700 .husky/*",
+    "eslint": "eslint --max-warnings 0  \"{src,mock}/**/*.{vue,ts,js,tsx}\" --fix",
+    "commit": "git add . && git-cz"
+  },
+  "dependencies": {
+    "@element-plus/icons-vue": "2.0.6",
+    "@toast-ui/editor": "3.0.2",
+    "@vueuse/core": "9.0.0",
+    "axios": "0.27.2",
+    "countup.js": "2.0.8",
+    "driver.js": "0.9.8",
+    "echarts": "5.3.2",
+    "element-plus": "2.2.11",
+    "file-saver": "2.0.5",
+    "fuse.js": "6.5.3",
+    "js-cookie": "3.0.1",
+    "jsencrypt": "3.2.1",
+    "mockjs": "1.1.0",
+    "nprogress": "0.2.0",
+    "pinia": "2.0.17",
+    "sortablejs": "1.14.0",
+    "vue": "3.2.37",
+    "vue-cropper": "1.0.3",
+    "vue-i18n": "^9.2.2",
+    "vue-router": "4.1.3",
+    "vue3-print-nb": "0.1.4"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.0.3",
+    "@commitlint/config-angular": "^17.0.3",
+    "@commitlint/cz-commitlint": "^17.0.3",
+    "@typescript-eslint/parser": "^5.30.7",
+    "@vitejs/plugin-vue": "3.0.1",
+    "@vitejs/plugin-vue-jsx": "1.3.10",
+    "@vue/compiler-sfc": "3.2.36",
+    "commitizen": "^4.2.4",
+    "cz-customizable": "^6.9.0",
+    "eslint": "^7.25.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-friendly-formatter": "^4.0.1",
+    "eslint-plugin-html": "^6.2.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-vue": "^9.2.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^12.4.1",
+    "prettier": "^2.7.1",
+    "sass": "1.54.0",
+    "terser": "^5.15.0",
+    "unplugin-auto-import": "0.10.2",
+    "vite": "3.0.3",
+    "vite-plugin-compression": "0.5.1",
+    "vite-plugin-mock": "2.9.6",
+    "vite-plugin-svg-icons": "2.0.1",
+    "vite-plugin-vue-setup-extend": "0.4.0",
+    "vite-plugin-windicss": "1.8.3",
+    "web-norm": "^1.0.24",
+    "windicss": "3.5.1"
+  },
+  "lint-staged": {
+    "*.{js,ts,vue,jsx,tsx}": [
+      "npm run eslint"
+    ],
+    "*.{js,jsx,ts,tsx,md,html,css,lees,scss,sass}": "prettier --write"
+  },
+  "config": {
+    "commitizen": {
+      "path": "@commitlint/cz-commitlint"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+export const dependencies = [
+  { name: '@element-plus/icons-vue', description: '2.0.6' },
+  { name: '@toast-ui/editor', description: '3.0.2' },
+  { name: '@vueuse/core', description: '9.0.0' },
+  { name: 'axios', description: '0.27.2' },
+  { name: 'countup.js', description: '2.0.8' },
+  { name: 'driver.js', description: '0.9.8' },
+  { name: 'echarts', description: '5.3.2' },
+  { name: 'element-plus', description: '2.2.11' },
+  { name: 'file-saver', description: '2.0.5' },
+  { name: 'fuse.js', description: '6.5.3' },
+  { name: 'js-cookie', description: '3.0.1' },
+  { name: 'jsencrypt', description: '3.2.1' },
+  { name: 'mockjs', description: '1.1.0' },
+  { name: 'nprogress', description: '0.2.0' },
+  { name: 'pinia', description: '2.0.17' },
+  { name: 'sortablejs', description: '1.14.0' },
+  { name: 'vue', description: '3.2.37' },
+  { name: 'vue-cropper', description: '1.0.3' },
+  { name: 'vue-i18n', description: '^9.2.2' },
+  { name: 'vue-router', description: '4.1.3' },
+  { name: 'vue3-print-nb', description: '0.1.4' }
+]
